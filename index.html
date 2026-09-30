@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Immune user guide: protect LLM applications built on OpenAI, LangChain and LangGraph." />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <title>Immune User Guide</title>
+    <script>
+      // Apply the saved or system theme before first paint, to avoid a flash of the wrong colors.
+      (function () {
+        try {
+          var saved = localStorage.getItem("immune-guide-theme");
+          var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.dataset.theme = dark ? "dark" : "light";
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
