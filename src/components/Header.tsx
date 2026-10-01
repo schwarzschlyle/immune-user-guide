@@ -9,7 +9,7 @@ interface HeaderProps {
 }
 
 export function Header({ theme, onToggleTheme, onToggleMenu }: HeaderProps) {
-  const logo = theme === "dark" ? "./logo-dark.png" : "./logo.png";
+  const logo = theme === "dark" ? "./logo-dark.svg" : "./logo.svg";
   return (
     <header className="header">
       <button type="button" className="icon-button menu-button" onClick={onToggleMenu} aria-label="Open navigation">

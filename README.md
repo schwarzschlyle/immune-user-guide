@@ -4,6 +4,8 @@ A static website for the [Immune](https://github.com/schwarzschlyle/immune) user
 Jupyter notebooks, with the outputs saved from a live run, as read-only pages: a sidebar lists every guide and the
 sections of the one you are reading, and the header has the logo, a link to the repository and a light/dark toggle.
 
+It is published at https://schwarzschlyle.github.io/immune-user-guide/.
+
 Built with React, TypeScript and Vite. There is no server: the notebooks are bundled at build time and the site runs
 from any static host.
 
@@ -50,5 +52,5 @@ such as `https://<user>.github.io/<repository>/` without extra configuration, an
 | `src/routing.ts` | Hash routes, and resolution of links written inside the notebooks |
 | `src/components/` | Header, sidebar, notebook, markdown and code cell rendering |
 | `src/styles.css` | Light and dark themes, layout and syntax colors |
-| `public/` | Logo (light and dark variants) and favicon |
+| `public/` | Logo (light and dark SVGs), favicon (an SVG that follows the system theme, with a PNG fallback), the home-screen icon and the link-preview card |
 | `scripts/sync-notebooks.mjs` | Copies the notebooks from the Immune repository |
